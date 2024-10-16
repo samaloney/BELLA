@@ -12,7 +12,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import scipy.io
 import solarmap
-from bayes_positioner import *
 from matplotlib import cm
 from matplotlib.ticker import FormatStrFormatter, LogFormatter
 # import pymc3 as pm
@@ -21,6 +20,8 @@ from scipy.ndimage import median_filter
 import astropy.units as u
 # import arviz as az
 from astropy.constants import R_sun, au
+
+from bella.multilaterate.bayes_positioner import *
 
 plt.rcParams.update({'font.size': 18})
 plt.rcParams["font.family"] = "Times New Roman"

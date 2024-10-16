@@ -1,6 +1,5 @@
 import datetime as dt
 
-import dynspec
 import matplotlib as mpl
 from matplotlib import pyplot as plt
 from radiospectra.spectrogram import Spectrogram
@@ -10,6 +9,8 @@ from astropy.time import Time
 from astropy.visualization import ImageNormalize, PercentileInterval
 
 from sunpy.net import attrs as a
+
+from bella.type_III_fitter import dynspec
 
 plt.rcParams.update({'font.size': 22})
 plt.rcParams.update({'font.family': "Times New Roman"})

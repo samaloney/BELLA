@@ -16,12 +16,11 @@ authors = [
   { name = "Luis Alberto Canizares", email = "canizares@cp.dias.ie" },
 ]
 dependencies = [
-  "Theano-PyMC==1.1.2",
-  "astropy==5.2.2" ,
+  "Theano-PyMC",
+  "astropy" ,
   "joblib==1.3.2",
   "solarmap==0.0.7",
-  "termcolor==2.3.0",
-  "pymc3==3.11.5"
+  "pymc3"
 ]
 dynamic = ["version"]
 

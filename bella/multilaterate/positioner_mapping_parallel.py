@@ -9,10 +9,6 @@ from math import radians
 from contextlib import contextmanager
 
 import arviz as az
-# caution: path[0] is reserved for script path (or '' in REPL)
-# IF running from a different directory, point to the multilaterate directory with bayes_positioner.py file
-#sys.path.insert(1, 'PATH/TO/Multilateratefolder')
-import bayes_positioner as bp
 import matplotlib
 import matplotlib.patheffects as PathEffects
 import matplotlib.pyplot as plt
@@ -27,6 +23,11 @@ from scipy.ndimage import median_filter
 from termcolor import colored
 
 from astropy.constants import R_sun, au, c
+
+# caution: path[0] is reserved for script path (or '' in REPL)
+# IF running from a different directory, point to the multilaterate directory with bayes_positioner.py file
+#sys.path.insert(1, 'PATH/TO/Multilateratefolder')
+from bella.multilaterate import bayes_positioner as bp
 
 
 @contextmanager
